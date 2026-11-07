@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Instruments - SurSite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#001d35",
+                    "primary-fixed-dim": "#9ccaff",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "secondary-fixed": "#8cf3f3",
+                    "on-primary-fixed-variant": "#00497b",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#87baf3",
+                    "on-surface": "#0b1c30",
+                    "surface-container-low": "#eff4ff",
+                    "secondary-container": "#8cf3f3",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface-bright": "#f8f9ff",
+                    "inverse-primary": "#9ccaff",
+                    "on-secondary-fixed": "#002020",
+                    "on-tertiary-container": "#a4b8d2",
+                    "secondary-fixed-dim": "#6fd7d6",
+                    "tertiary-fixed-dim": "#b4c8e2",
+                    "tertiary-fixed": "#d0e4ff",
+                    "on-surface-variant": "#42474f",
+                    "surface-tint": "#296195",
+                    "surface": "#f8f9ff",
+                    "on-tertiary-fixed": "#071d30",
+                    "on-tertiary-fixed-variant": "#35485e",
+                    "outline-variant": "#c1c7d0",
+                    "primary-fixed": "#d0e4ff",
+                    "background": "#f8f9ff",
+                    "surface-dim": "#cbdbf5",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#007070",
+                    "surface-container": "#e5eeff",
+                    "inverse-surface": "#213145",
+                    "surface-container-high": "#dce9ff",
+                    "primary": "#003358",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#d3e4fe",
+                    "secondary": "#006a6a",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#004a7c",
+                    "tertiary": "#1f3347",
+                    "tertiary-container": "#36495f",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "on-primary": "#ffffff",
+                    "outline": "#727780",
+                    "surface-container-lowest": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "lg": "24px",
+                    "xl": "40px",
+                    "md": "16px",
+                    "2xl": "64px",
+                    "xs": "4px",
+                    "sm": "8px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "headline-sm": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Inter"
+                    ],
+                    "technical-data": [
+                            "Inter"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "body-sm": [
+                            "Inter"
+                    ],
+                    "display-lg": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-sm": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "technical-data": [
+                            "13px",
+                            {
+                                    "lineHeight": "18px",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-md": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface docked full-width top-0 sticky z-50 border-b border-outline-variant flat no shadows">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto h-20">
+<!-- Brand -->
+<div class="flex items-center gap-2">
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">SurSite</span>
+</div>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md hover:bg-surface-container-low transition-colors duration-200" href="#">Instruments</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors duration-200" href="#">Categories</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors duration-200" href="#">Sialkot Heritage</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md hover:bg-surface-container-low transition-colors duration-200" href="#">Compliance</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-md">
+<button aria-label="shopping_cart" class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button aria-label="account_circle" class="text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface-variant p-2 rounded-full hover:bg-surface-container-low" id="mobile-menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation (Hidden by default) -->
+<div class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-mobile py-4 space-y-4" id="mobile-menu">
+<a class="block text-primary font-label-md text-label-md" href="#">Instruments</a>
+<a class="block text-on-surface-variant font-label-md text-label-md" href="#">Categories</a>
+<a class="block text-on-surface-variant font-label-md text-label-md" href="#">Sialkot Heritage</a>
+<a class="block text-on-surface-variant font-label-md text-label-md" href="#">Compliance</a>
+</div>
+</nav>
+<!-- Main Content Layout -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="md:col-span-3 space-y-lg">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Instruments</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-xl">Precision surgical tools crafted in Sialkot.</p>
+</div>
+<!-- Filter Group: Material -->
+<div class="border border-outline-variant rounded bg-surface p-md">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-md border-b border-outline-variant pb-2">Material</h3>
+<div class="space-y-sm">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">316L Stainless Steel</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">High Carbon Steel</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Titanium Alloy</span>
+</label>
+</div>
+</div>
+<!-- Filter Group: Category -->
+<div class="border border-outline-variant rounded bg-surface p-md">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-md border-b border-outline-variant pb-2">Category</h3>
+<div class="space-y-sm">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Cutting &amp; Dissecting</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Grasping &amp; Holding</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Clamping &amp; Occluding</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4 bg-white" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Retracting &amp; Exposing</span>
+</label>
+</div>
+</div>
+<button class="w-full bg-[#008B8B] hover:bg-[#007A7A] text-white font-label-md text-label-md py-3 rounded transition-colors uppercase tracking-wider">
+                Apply Filters
+            </button>
+</aside>
+<!-- Product Grid -->
+<section class="md:col-span-9">
+<div class="flex justify-between items-center mb-md pb-sm border-b border-outline-variant">
+<span class="font-technical-data text-technical-data text-on-surface-variant">Showing 44 Instruments</span>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Sort by:</span>
+<select class="bg-surface border border-[#B0C4DE] text-on-surface font-body-sm text-body-sm rounded px-2 py-1 focus:border-[#004A7C] focus:ring-1 focus:ring-[#004A7C] outline-none">
+<option>Clinical Relevance</option>
+<option>Price: Low to High</option>
+<option>Grade: Highest</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface border border-[#B0C4DE] hover:shadow-[0px_4px_12px_rgba(0,74,124,0.05)] transition-shadow duration-300 rounded flex flex-col group overflow-hidden">
+<div class="aspect-square bg-white border-b border-[#B0C4DE] p-4 relative flex items-center justify-center">
+<!-- ISO Badge -->
+<div class="absolute top-2 right-2 bg-surface-container-low text-on-surface-variant font-technical-data text-[10px] px-1 py-0.5 rounded border border-outline-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> ISO 13485
+                        </div>
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="A sterile, high-key macro photograph of a stainless steel Precision Scalpel Handle #3 against a pure white clinical background. The lighting is incredibly sharp, highlighting the precise knurling on the handle and the sleek, polished finish of the surgical steel. The mood is highly professional, precise, and authoritative, matching a top-tier medical procurement catalog in light mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPK2NFv09aAO_A1KayQR59SqgEVshVZKk_wLwV1GBxT_nLBJ4CEkoXfaBmd2xkNx3Zr5dr56ucYZWjCuwJy6Bh4JpRrhDVK8UhwlPO8sUGP28QX5Iaaf8YsY1PgC91WVye-RLIwQRKiIjoYjNskkor8WpHM5obZtBsTXAw3bNnwNz7kLCmqta3bfQlf1WeAvhseMOs1MKOrGmzLAlwIrAtFUNQSo8MZdxALt9fdKXXzV-DgxuG_mc"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-auto">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Precision Scalpel Handle #3</h4>
+<div class="flex items-center gap-2 mb-3">
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">316L Steel</span>
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">12.5cm</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-between items-end">
+<div>
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest mb-0.5">Est. Bulk Price</p>
+<p class="font-headline-md text-headline-md text-[#004A7C]">Rs. 450</p>
+</div>
+<button class="border border-[#B0C4DE] text-[#004A7C] hover:bg-[#F8FAFC] font-label-md text-label-md px-3 py-1.5 rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">description</span> Quote
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface border border-[#B0C4DE] hover:shadow-[0px_4px_12px_rgba(0,74,124,0.05)] transition-shadow duration-300 rounded flex flex-col group overflow-hidden">
+<div class="aspect-square bg-white border-b border-[#B0C4DE] p-4 relative flex items-center justify-center">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="A macro studio shot of curved Metzenbaum Scissors resting on a sterile white surface. The lighting is diffused yet bright, creating subtle reflections on the high-quality stainless steel blades and golden-handled rings (indicating tungsten carbide inserts). The aesthetic is ultra-clean, clinical, and precise, perfectly suited for a high-end medical equipment e-commerce platform in a light theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5glRx2fvwar_mYK8hF_HBZ97vCjrwbjCdkRhga0prHrI4ipIQ-khgAlYNz5zcZfh58srvgdraXYsAT6nz2ZPglpQvpSRQEf-mpI825M0HvGj5r37sOGVvFYnB4TVfffUw5h5stMUV2U2FIGGH13kNzWhT9Gb3N19r5Vsbl3YcztC5DS-2z9dXm7m1_fWAZGcG50BaIH8GWSAAVECybcIMOWAWl6Mh_kQiqcrU3Xo2F86dp_suiuA"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-auto">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Metzenbaum Scissors (Curved)</h4>
+<div class="flex items-center gap-2 mb-3">
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">TC Inserts</span>
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">18cm</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-between items-end">
+<div>
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest mb-0.5">Est. Bulk Price</p>
+<p class="font-headline-md text-headline-md text-[#004A7C]">Rs. 1,850</p>
+</div>
+<button class="border border-[#B0C4DE] text-[#004A7C] hover:bg-[#F8FAFC] font-label-md text-label-md px-3 py-1.5 rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">description</span> Quote
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface border border-[#B0C4DE] hover:shadow-[0px_4px_12px_rgba(0,74,124,0.05)] transition-shadow duration-300 rounded flex flex-col group overflow-hidden">
+<div class="aspect-square bg-white border-b border-[#B0C4DE] p-4 relative flex items-center justify-center">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="A highly detailed, sterile product photograph of Adson Tissue Forceps with 1x2 teeth. The forceps are arranged diagonally across a pristine white background. Crisp, high-contrast lighting accentuates the ribbed grip area and the delicate interdigitating teeth at the tip. The overall mood conveys uncompromising clinical quality, authoritative medical procurement, and clean, light-mode systematic minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDokmsgl4JFSTVXP8UOKZKLsYJPPU3yQRYrU3m9Vg8EZ8ySWWxOFm5LTZQM8eF136Kqej6T_J9K0gQ83VbsCP0c3OnC-1513ewBRv7lky8C_eUlttX6paBZCjTX7537ace4t3HdlEKIgw4j0D94Lwbk5jAfApfWmFOU9xSLHHUpEkXkxUAk0ZZLyC0nkLAC7sClZ3r4hGWB3NLkBYJaNDE-D8QDm-oHZYKnLZOLT1rsSa7Aq8W3fg"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-auto">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Adson Tissue Forceps (1x2 Teeth)</h4>
+<div class="flex items-center gap-2 mb-3">
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">316L Steel</span>
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">12cm</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-between items-end">
+<div>
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest mb-0.5">Est. Bulk Price</p>
+<p class="font-headline-md text-headline-md text-[#004A7C]">Rs. 620</p>
+</div>
+<button class="border border-[#B0C4DE] text-[#004A7C] hover:bg-[#F8FAFC] font-label-md text-label-md px-3 py-1.5 rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">description</span> Quote
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface border border-[#B0C4DE] hover:shadow-[0px_4px_12px_rgba(0,74,124,0.05)] transition-shadow duration-300 rounded flex flex-col group overflow-hidden">
+<div class="aspect-square bg-white border-b border-[#B0C4DE] p-4 relative flex items-center justify-center">
+<img class="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500" data-alt="A sterile, sharply focused image of Hegar Needle Holders on a stark white background. The instrument features gold-plated ring handles denoting premium tungsten carbide jaws. The clinical lighting emphasizes the cross-hatched pattern on the inner jaws designed for secure needle gripping. The image reflects a systematic, authoritative aesthetic suitable for a high-end surgical supplier catalog in light mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEX4qB0z-tZDXFhrQU3apaUFBzbLx1oYykB4vIs0I5y2fRyUvGnu3tQF12fjgiLzKGMPO1nj6pb93DDouqYRwVBBHkDrUoNszfmn2qIIjROsQCvNPTVYlQZFXYcqSjMjcJ03bu7y3ECV_ghPNkvs7LJDK_0FZWojtmn1LufMQc8KBG--KC5l_OTEvkL-oE16E0IEzMH0pdSSIXoTxatbO7ZSFr2KGYDevGOl4r58m59SWfnvDgeo"/>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<div class="mb-auto">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Hegar Needle Holders</h4>
+<div class="flex items-center gap-2 mb-3">
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">TC Inserts</span>
+<span class="font-technical-data text-[11px] text-on-surface-variant bg-[#F8FAFC] px-1.5 py-0.5 rounded border border-outline-variant">20cm</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-between items-end">
+<div>
+<p class="font-label-md text-[10px] text-on-surface-variant uppercase tracking-widest mb-0.5">Est. Bulk Price</p>
+<p class="font-headline-md text-headline-md text-[#004A7C]">Rs. 2,100</p>
+</div>
+<button class="border border-[#B0C4DE] text-[#004A7C] hover:bg-[#F8FAFC] font-label-md text-label-md px-3 py-1.5 rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">description</span> Quote
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination (Simplified) -->
+<div class="mt-xl flex justify-center items-center gap-2">
+<button class="p-2 border border-outline-variant rounded text-on-surface-variant hover:text-primary hover:border-[#B0C4DE] bg-white disabled:opacity-50"><span class="material-symbols-outlined text-[20px]">chevron_left</span></button>
+<span class="font-technical-data text-technical-data text-primary w-8 h-8 flex items-center justify-center bg-surface-container-low rounded border border-[#004A7C]">1</span>
+<button class="font-technical-data text-technical-data text-on-surface-variant w-8 h-8 flex items-center justify-center hover:bg-surface-container-low rounded">2</button>
+<button class="font-technical-data text-technical-data text-on-surface-variant w-8 h-8 flex items-center justify-center hover:bg-surface-container-low rounded">3</button>
+<span class="font-technical-data text-technical-data text-on-surface-variant">...</span>
+<button class="p-2 border border-outline-variant rounded text-on-surface-variant hover:text-primary hover:border-[#B0C4DE] bg-white"><span class="material-symbols-outlined text-[20px]">chevron_right</span></button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest w-full py-xl px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-7xl mx-auto border-t border-outline-variant flat no shadows mt-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-sm text-headline-sm font-bold text-primary mb-4 block">SurSite</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 SurSite Surgical. Precision from Sialkot. ISO 13485 Certified.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">WhatsApp Support</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Request Bulk Quote</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
+</div>
+</footer>
+<script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body></html>

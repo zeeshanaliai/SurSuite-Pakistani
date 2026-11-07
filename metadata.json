@@ -1,0 +1,6 @@
+{
+  "name": "SurSite Surgical",
+  "description": "Precision surgical instruments crafted in Sialkot, Pakistan. ISO 13485 certified surgical instruments procurement and catalog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

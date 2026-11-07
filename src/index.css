@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-primary: #003358;
+  --color-primary-container: #004a7c;
+  --color-secondary: #006a6a;
+  --color-secondary-container: #8cf3f3;
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #42474f;
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-outline: #727780;
+  --color-outline-variant: #c1c7d0;
+  --color-steel: #B0C4DE;
+  --color-clinical-teal: #008B8B;
+  --color-clinical-teal-hover: #007070;
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f8f9ff;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c7d0;
+  border-radius: 4px;
+}
+
+.zebra-row:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Blueprint pattern background */
+.blueprint-grid {
+  background-image: linear-gradient(to right, #B0C4DE 1px, transparent 1px), linear-gradient(to bottom, #B0C4DE 1px, transparent 1px);
+  background-size: 20px 20px;
+}
